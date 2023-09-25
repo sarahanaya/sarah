@@ -1,0 +1,114 @@
+body {
+    background-color: #13174f;
+    color: #d1d3fb;
+    text-align:center; 
+    font-family: "Fuzzy Bubbles", "Raleway";
+    margin-top: 100px;
+    
+}
+
+header {
+    background-color:#282b5d; 
+    border: none;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* makes text in middle of box (vertical wise / height wise)*/
+    position: fixed;
+    top: 0; 
+    left:0; 
+    
+}
+nav {
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 30px;
+    
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+  
+img {
+    height:600px; 
+    width:auto; 
+    float:left; 
+
+}
+
+a:link {
+    color: #d1d3fb;
+}
+
+a:visited {
+    color: #d1d3fb;
+}
+
+a:hover {
+    color: #ffd22c;
+  }
+  
+
+#home h1 {
+    text-align: center;
+    margin:10px;
+    font-size: 50px; 
+}
+
+.hello{
+    padding-top:225px; 
+}
+
+#home{
+    padding-bottom: 300px;
+}
+
+
+
+#projects {
+    margin-left:25px; 
+    margin-bottom: 100px;
+}
+
+.projects h1 {
+    text-align: center;
+    font-size: 50px; 
+}
+
+.proj {
+    background-color: #282b5d;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    width:300px; 
+    height:350px; 
+}
+
+.project-row
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: 50px; 
+}
+
+/*
+
+light gray: #D3D3D3
+
+Maximum Red (#CF291D)
+Bright Gray (#ECECEC)
+Argent (#BFBFBF)
+Eerie Black (#1D1D1D)
+Cadmium Purple (#B50717)
+Chinese Black (#131313)
+
+*/
