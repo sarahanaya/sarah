@@ -16,6 +16,10 @@ body {
     margin:0; 
 }
 
+#about-me h1:hover {
+    color: greenyellow; 
+}
+
 #about-me h2 {
     color: #d8d4d4;
     text-align: center;
@@ -99,8 +103,8 @@ form input, form textarea{
     outline: none;
     font-size: 16px;
     color: #d8d4d4;
-    max-width: 580px;
-    min-width: 580px;
+    max-width: 520px;
+    min-width: 520px;
 }
 
 
@@ -118,9 +122,16 @@ form button {
     border-radius: 30px;
 }
 
+form button:hover
+{
+    background-color: white;
+    color: #DE1B1B;
+}
+
 ::placeholder {
     color:#a6a4a4; 
     font-family: "Quicksand";
+    
 }
 
 #contact h1
@@ -133,3 +144,38 @@ form button {
     margin:0; 
     padding-top: 30px;
 }
+
+#social-media a:link, #social-media a:visited {
+    color:#DE1B1B;
+}
+
+#social-media a:hover {
+    color: greenyellow;
+}
+
+#social-media {
+
+    display: flex;
+    gap: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #3b3b3b; 
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: greenyellow; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: white; 
+  }
