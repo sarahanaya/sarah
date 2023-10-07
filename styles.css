@@ -1,48 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #151515;
-    color:white;
+    color: white;
     /*font-family: 'Sedgwick Ave Display', cursive;*/
     font-family: "Quicksand";
-    margin: 0; 
-    padding: 0;
 }
 
 #about-me h1 {
     font-size: 90px;
-    white-space: nowrap;
     text-align: center;
     font-family: 'Dela Gothic One', cursive;
-    text-shadow:5px 5px #DE1B1B;
-    margin:0; 
+    text-shadow: 5px 5px #DE1B1B;
+    margin: 0;
 }
-
 
 #about-me h2 {
     color: #d8d4d4;
     text-align: center;
     font-size: 30px;
-    /*text-shadow:2px 2px red,
-    -2px -2px blue;*/
-    margin:0; 
+    margin: 0;
 }
 
 #about-me {
-
-    /*position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
 #projects {
-    color:black; 
+    color: black;
     min-height: 100vh;
     width: 100%;
     background-color: #DE1B1B;
@@ -55,21 +49,68 @@ body {
     white-space: nowrap;
     text-align: center;
     font-family: 'Dela Gothic One', cursive;
-    text-shadow:5px 5px white;
-    margin:0; 
+    text-shadow: 5px 5px white;
+    margin: 0;
     padding-top: 30px;
 }
 
-#contact
-{
+.proj-row {
+    display: flex;
+    flex-direction: row;
+}
+
+#projects h2 {
+    font-size: 30px;
+}
+
+.container {
+    padding-top: 50px;
+    width: 350px;
+    height: 500px;
+}
+
+.container:hover>.card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    border-radius: 2rem;
+    border: 0;
+}
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
     background-color: #151515;
-    color:white;
+}
+
+.back {
+    background-color: #3b3b3b;
+    transform: rotateY(180deg);
+}
+
+#contact {
+    background-color: #151515;
+    color: white;
     min-height: 100vh;
     width: 100%;
 }
 
 #contact h1 {
-
     padding-bottom: 50px;
 }
 
@@ -77,14 +118,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 #email-form h3 {
     font-size: 25px;
     text-align: center;
 }
-
 
 form {
     padding: 2vw 4vw;
@@ -95,7 +134,8 @@ form {
     max-width: 600px;
 }
 
-form input, form textarea{
+form input,
+form textarea {
     border: 0;
     background-color: #262626;
     margin: 10px 0;
@@ -108,12 +148,9 @@ form input, form textarea{
     min-width: 520px;
 }
 
-form textarea
-{
+form textarea {
     resize: none;
 }
-
-
 
 form button {
     padding: 15px;
@@ -128,30 +165,28 @@ form button {
     border-radius: 30px;
 }
 
-form button:hover
-{
+form button:hover {
     background-color: #e33434;
 }
 
 ::placeholder {
-    color:#a6a4a4; 
+    color: #a6a4a4;
     font-family: "Quicksand";
-    
 }
 
-#contact h1
-{
+#contact h1 {
     font-size: 50px;
     white-space: nowrap;
     text-align: center;
     font-family: 'Dela Gothic One', cursive;
-    text-shadow:5px 5px #DE1B1B;
-    margin:0; 
+    text-shadow: 5px 5px #DE1B1B;
+    margin: 0;
     padding-top: 30px;
 }
 
-#social-media a:link, #social-media a:visited {
-    color:#DE1B1B;
+#social-media a:link,
+#social-media a:visited {
+    color: #DE1B1B;
 }
 
 #social-media a:hover {
@@ -159,7 +194,6 @@ form button:hover
 }
 
 #social-media {
-
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -169,21 +203,27 @@ form button:hover
 
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #3b3b3b; 
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #3b3b3b;
     border-radius: 5px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: greenyellow; 
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: greenyellow;
     border-radius: 5px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: white; 
-  }
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
