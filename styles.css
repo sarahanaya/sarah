@@ -63,6 +63,9 @@ body {
     font-size: 30px;
 }
 
+
+/* flipping card info: https://youtu.be/NCLdf661ILE?si=AnW1ofb17IsXg-Bh */
+
 .container {
     padding-top: 50px;
     width: 350px;
@@ -93,10 +96,12 @@ body {
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     position: absolute;
     backface-visibility: hidden;
+    padding: 10px;
 }
 
 .front {
     background-color: #151515;
+    color: #d8d4d4;
 }
 
 .back {
