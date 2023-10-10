@@ -8,14 +8,12 @@ body {
     background-color: #151515;
     color: white;
     /*font-family: 'Sedgwick Ave Display', cursive;*/
-    font-family: "Quicksand";
+    font-family: 'Playfair Display', serif;
 }
 
 #about-me h1 {
     font-size: 90px;
     text-align: center;
-    font-family: 'Dela Gothic One', cursive;
-    text-shadow: 5px 5px #DE1B1B;
     margin: 0;
 }
 
@@ -27,6 +25,10 @@ body {
 }
 
 #about-me {
+    background-image: url(https://images.pexels.com/photos/2387533/pexels-photo-2387533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-color: #151515;
+    background-attachment: fixed; 
+    background-position: center;
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -39,7 +41,7 @@ body {
     color: black;
     min-height: 100vh;
     width: 100%;
-    background-color: #DE1B1B;
+    background-color: #c2c2c2;
     text-align: center;
     /*min-height: 100vh;*/
 }
@@ -48,8 +50,6 @@ body {
     font-size: 50px;
     white-space: nowrap;
     text-align: center;
-    font-family: 'Dela Gothic One', cursive;
-    text-shadow: 5px 5px white;
     margin: 0;
     padding-top: 30px;
 }
@@ -110,15 +110,16 @@ body {
 }
 
 #contact {
+    background-image: url(https://images.unsplash.com/photo-1518989504269-a24cacf584d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2748&q=80);
     background-color: #151515;
+    background-attachment: fixed; 
+    background-position: center;
     color: white;
     min-height: 100vh;
     width: 100%;
 }
 
-#contact h1 {
-    padding-bottom: 50px;
-}
+
 
 #email-form {
     display: flex;
@@ -160,7 +161,7 @@ form textarea {
 
 form button {
     padding: 15px;
-    background-color: #DE1B1B;
+    background-color: #9e9e9e;
     color: white;
     font-size: 18px;
     border: 0;
@@ -172,31 +173,30 @@ form button {
 }
 
 form button:hover {
-    background-color: #e33434;
+    background-color: #c2c2c2;
 }
 
 ::placeholder {
     color: #a6a4a4;
-    font-family: "Quicksand";
+    font-family: 'Playfair Display', serif;
 }
 
 #contact h1 {
     font-size: 50px;
     white-space: nowrap;
     text-align: center;
-    font-family: 'Dela Gothic One', cursive;
-    text-shadow: 5px 5px #DE1B1B;
+    font-family: 'Playfair Display', serif;
     margin: 0;
     padding-top: 30px;
 }
 
 #social-media a:link,
 #social-media a:visited {
-    color: #DE1B1B;
+    color: #9e9e9e;
 }
 
 #social-media a:hover {
-    color: greenyellow;
+    color: #e0e0e0;
 }
 
 #social-media {
@@ -223,7 +223,7 @@ form button:hover {
 /* Handle */
 
  ::-webkit-scrollbar-thumb {
-    background: greenyellow;
+    background: #e0e0e0;
     border-radius: 5px;
 }
 
