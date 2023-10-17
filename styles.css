@@ -18,6 +18,8 @@ img {
     margin-top: 20px;
     width: 250px;
     height: 150px;
+    max-width: 250px;
+    max-height: 150px;
 }
 
 #about-me h1 {
